@@ -1,0 +1,49 @@
+.cardPhieuGiamGia {
+  height: 220px;
+  width: 300px;
+  padding: 0.5rem;
+  background: rgba(198, 198, 198, 0.34);
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+  border-left: 2px  rgba(255, 255, 255, 0.545) outset;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.280);
+  /* transform: skewX(10deg); */
+  transition: .4s;
+  overflow: hidden;
+
+  
+}
+ .cardPhieuGiamGia .p {
+margin-bottom: 0px;
+}
+
+
+.cardPhieuGiamGia h3 {
+  text-align: center;
+  margin: 1.3rem;
+  color: rgb(20, 22, 22);
+  text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+}
+
+.cardribbon {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+.cardribbon {
+  --f: .5em; /* control the folded part */
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 1.8;
+  padding-inline: 1lh;
+  padding-bottom: var(--f);
+  border-image: conic-gradient(#0008 0 0) 51%/var(--f);
+  clip-path: polygon(
+    100% calc(100% - var(--f)),100% 100%,calc(100% - var(--f)) calc(100% - var(--f)),var(--f) calc(100% - var(--f)), 0 100%,0 calc(100% - var(--f)),999px calc(100% - var(--f) - 999px),calc(100% - 999px) calc(100% - var(--f) - 999px));
+  transform: translate(calc((1 - cos(45deg))*100%), -100%) rotate(45deg);
+  transform-origin: 0% 100%;
+  background-color: #BD1550; /* the main color  */
+}

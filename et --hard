@@ -1,0 +1,130 @@
+[33md8f2e48[m[33m ([m[1;36mHEAD -> [m[1;32mdeveloper[m[33m, [m[1;31morigin/developer[m[33m)[m HEAD@{0}: pull origin developer: Fast-forward
+[33m4bc7a3f[m HEAD@{1}: checkout: moving from phanh to developer
+[33m4fa644b[m[33m ([m[1;31morigin/phanh[m[33m, [m[1;32mphanh[m[33m)[m HEAD@{2}: commit: fix sanpham vs client
+[33m4bc7a3f[m HEAD@{3}: merge developer: Fast-forward
+[33mc25867c[m HEAD@{4}: checkout: moving from developer to phanh
+[33m4bc7a3f[m HEAD@{5}: pull origin developer: Fast-forward
+[33m79dc821[m HEAD@{6}: checkout: moving from phanh to developer
+[33mc25867c[m HEAD@{7}: checkout: moving from developer to phanh
+[33m79dc821[m HEAD@{8}: checkout: moving from phanh to developer
+[33mc25867c[m HEAD@{9}: commit: fix thong ke api
+[33m6298285[m HEAD@{10}: commit: fix giao diện
+[33mf91f9d9[m HEAD@{11}: commit: done kh , hd ,voucher
+[33m1845f29[m HEAD@{12}: commit: voucher
+[33m654e373[m HEAD@{13}: commit: update kh nv
+[33m79dc821[m HEAD@{14}: merge developer: Fast-forward
+[33m9feb8ce[m HEAD@{15}: checkout: moving from developer to phanh
+[33m79dc821[m HEAD@{16}: pull origin developer: Fast-forward
+[33m828b31e[m[33m ([m[1;32mduong[m[33m)[m HEAD@{17}: checkout: moving from duong to developer
+[33m828b31e[m[33m ([m[1;32mduong[m[33m)[m HEAD@{18}: merge developer: Fast-forward
+[33m245ff76[m HEAD@{19}: checkout: moving from developer to duong
+[33m828b31e[m[33m ([m[1;32mduong[m[33m)[m HEAD@{20}: checkout: moving from phanh to developer
+[33m9feb8ce[m HEAD@{21}: commit: fix sidebar
+[33m2abc9d2[m HEAD@{22}: commit: fix
+[33m3e2e5a5[m HEAD@{23}: commit: config giao diện
+[33m828b31e[m[33m ([m[1;32mduong[m[33m)[m HEAD@{24}: merge developer: Fast-forward
+[33me2d6589[m HEAD@{25}: checkout: moving from developer to phanh
+[33m828b31e[m[33m ([m[1;32mduong[m[33m)[m HEAD@{26}: pull origin developer: Fast-forward
+[33me4a60e1[m HEAD@{27}: checkout: moving from phanh to developer
+[33me2d6589[m HEAD@{28}: commit: xuất excel thống kê
+[33m3c40b0b[m HEAD@{29}: commit: voucher bán hàng
+[33me4a60e1[m HEAD@{30}: merge developer: Fast-forward
+[33m7ea9530[m HEAD@{31}: checkout: moving from developer to phanh
+[33me4a60e1[m HEAD@{32}: pull origin developer: Fast-forward
+[33md01a064[m HEAD@{33}: checkout: moving from phanh to developer
+[33m7ea9530[m HEAD@{34}: commit: done thống kê
+[33ma7dc9fe[m HEAD@{35}: commit: thống kê
+[33md01a064[m HEAD@{36}: merge developer: Fast-forward
+[33me899b99[m HEAD@{37}: checkout: moving from developer to phanh
+[33md01a064[m HEAD@{38}: pull origin developer: Fast-forward
+[33m2962498[m HEAD@{39}: checkout: moving from phanh to developer
+[33me899b99[m HEAD@{40}: commit: dia chi
+[33m22382ad[m HEAD@{41}: merge developer: Merge made by the 'ort' strategy.
+[33me92b8d9[m HEAD@{42}: checkout: moving from developer to phanh
+[33m2962498[m HEAD@{43}: pull origin developer: Fast-forward
+[33m77847d3[m HEAD@{44}: checkout: moving from phanh to developer
+[33me92b8d9[m HEAD@{45}: checkout: moving from duong to phanh
+[33m245ff76[m HEAD@{46}: checkout: moving from developer to duong
+[33m77847d3[m HEAD@{47}: checkout: moving from phanh to developer
+[33me92b8d9[m HEAD@{48}: commit: a
+[33m09451ac[m HEAD@{49}: commit: fix khachhang
+[33m77847d3[m HEAD@{50}: merge developer: Fast-forward
+[33m874147d[m HEAD@{51}: checkout: moving from developer to phanh
+[33m77847d3[m HEAD@{52}: pull origin developer: Fast-forward
+[33m874147d[m HEAD@{53}: checkout: moving from phanh to developer
+[33m874147d[m HEAD@{54}: merge developer: Fast-forward
+[33m0c44b46[m HEAD@{55}: checkout: moving from developer to phanh
+[33m874147d[m HEAD@{56}: pull origin developer: Fast-forward
+[33mc279eef[m HEAD@{57}: checkout: moving from phanh to developer
+[33m0c44b46[m HEAD@{58}: commit: thống kê
+[33m5881cb0[m HEAD@{59}: commit: api thống kê
+[33m2e1997a[m HEAD@{60}: commit: thêm nhiều địa chỉ
+[33ma3d3aa7[m HEAD@{61}: commit: thanh toán vnp
+[33mc0d458a[m HEAD@{62}: commit: thanh toán
+[33mc279eef[m HEAD@{63}: merge developer: Fast-forward
+[33m950dc09[m HEAD@{64}: checkout: moving from developer to phanh
+[33mc279eef[m HEAD@{65}: pull origin developer: Fast-forward
+[33mf80d420[m HEAD@{66}: checkout: moving from phanh to developer
+[33m950dc09[m HEAD@{67}: commit: dia chi
+[33ma6327cd[m HEAD@{68}: commit: add địa chỉ
+[33m4068ede[m HEAD@{69}: commit: add dia chi
+[33mf80d420[m HEAD@{70}: merge developer: Fast-forward
+[33mc4a3d6b[m HEAD@{71}: checkout: moving from developer to phanh
+[33mf80d420[m HEAD@{72}: pull origin developer: Fast-forward
+[33m008904e[m HEAD@{73}: checkout: moving from phanh to developer
+[33mc4a3d6b[m HEAD@{74}: commit: chuyển trạng thái hóa đơn
+[33m008904e[m HEAD@{75}: merge developer: Fast-forward
+[33m8705152[m HEAD@{76}: checkout: moving from developer to phanh
+[33m008904e[m HEAD@{77}: pull origin developer: Fast-forward
+[33m8705152[m HEAD@{78}: checkout: moving from phanh to developer
+[33m8705152[m HEAD@{79}: merge developer: Fast-forward
+[33m04d3655[m HEAD@{80}: checkout: moving from developer to phanh
+[33m8705152[m HEAD@{81}: pull origin developer: Fast-forward
+[33m213dec5[m HEAD@{82}: checkout: moving from phanh to developer
+[33m04d3655[m HEAD@{83}: commit: thanh toan
+[33m94fccda[m HEAD@{84}: commit: fix detail voucher
+[33m41578ce[m HEAD@{85}: commit: tạo hóa đơn và hóa đơn chi tiết
+[33m213dec5[m HEAD@{86}: merge developer: Fast-forward
+[33md652a7e[m HEAD@{87}: checkout: moving from developer to phanh
+[33m213dec5[m HEAD@{88}: pull origin developer: Fast-forward
+[33mc971555[m HEAD@{89}: checkout: moving from phanh to developer
+[33md652a7e[m HEAD@{90}: commit: redux hóa đơn
+[33mc971555[m HEAD@{91}: merge developer: Fast-forward
+[33m7c2689f[m HEAD@{92}: checkout: moving from developer to phanh
+[33mc971555[m HEAD@{93}: pull origin developer: Fast-forward
+[33mf7e92fd[m HEAD@{94}: checkout: moving from phanh to developer
+[33m7c2689f[m HEAD@{95}: commit: fix redux
+[33m0b0f65b[m HEAD@{96}: commit: config redux
+[33m1017666[m HEAD@{97}: commit (merge): add voucher
+[33m1230578[m HEAD@{98}: checkout: moving from developer to phanh
+[33mf7e92fd[m HEAD@{99}: pull origin developer: Fast-forward
+[33ma358a4b[m HEAD@{100}: checkout: moving from phanh to developer
+[33m1230578[m HEAD@{101}: commit: phanh
+[33ma358a4b[m HEAD@{102}: checkout: moving from developer to phanh
+[33ma358a4b[m HEAD@{103}: checkout: moving from phanh to developer
+[33ma358a4b[m HEAD@{104}: checkout: moving from developer to phanh
+[33ma358a4b[m HEAD@{105}: checkout: moving from phanh to developer
+[33ma358a4b[m HEAD@{106}: merge developer: Fast-forward
+[33m25ce1d7[m HEAD@{107}: checkout: moving from developer to phanh
+[33ma358a4b[m HEAD@{108}: pull origin developer: Fast-forward
+[33m7616c2d[m HEAD@{109}: checkout: moving from phanh to developer
+[33m25ce1d7[m HEAD@{110}: commit: tab hóa đơn
+[33ma1ecca2[m HEAD@{111}: commit: nguoi dung voucher
+[33mb4a1c2c[m HEAD@{112}: commit: nguoi dung voucher
+[33ma446d49[m HEAD@{113}: pull: Fast-forward
+[33m4f73e2c[m HEAD@{114}: checkout: moving from developer to phanh
+[33m7616c2d[m HEAD@{115}: checkout: moving from phanh to developer
+[33m4f73e2c[m HEAD@{116}: commit: tao hoa don voi redux
+[33m7616c2d[m HEAD@{117}: merge developer: Fast-forward
+[33me40001e[m HEAD@{118}: checkout: moving from developer to phanh
+[33m7616c2d[m HEAD@{119}: pull origin developer: Fast-forward
+[33m1b1bdb0[m HEAD@{120}: checkout: moving from phanh to developer
+[33me40001e[m HEAD@{121}: merge developer: Merge made by the 'ort' strategy.
+[33mc9b78f0[m HEAD@{122}: checkout: moving from developer to phanh
+[33m1b1bdb0[m HEAD@{123}: pull origin developer: Fast-forward
+[33ma34ab97[m HEAD@{124}: checkout: moving from phanh to developer
+[33mc9b78f0[m HEAD@{125}: checkout: moving from developer to phanh
+[33ma34ab97[m HEAD@{126}: checkout: moving from phanh to developer
+[33mc9b78f0[m HEAD@{127}: commit: voucher fix loc
+[33m0c63844[m HEAD@{128}: commit: voucher
+[33mafda523[m

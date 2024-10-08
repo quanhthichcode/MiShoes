@@ -1,0 +1,67 @@
+package com.example.backend.dto.impldto;
+
+import com.example.backend.entity.DiaChi;
+import com.example.backend.entity.NguoiDung;
+import lombok.*;
+
+import java.sql.Date;
+import java.time.LocalDateTime;
+@Getter
+@Setter
+public class NhanVienResponseImplDTO {
+    private Integer stt;
+    private String iduser;
+    private String ma;
+    private String ten;
+    private Long ngaySinh;
+    private String soDienThoai;
+    private LocalDateTime ngayThamGia;
+    private LocalDateTime ngaySua;
+    private String chungMinhThu;
+    private Boolean gioiTinh;
+    private String avatar;
+    private String email;
+    private String nguoiTao;
+    private String chucVu;
+    private int trangThai;
+    private String idAddress;
+    private String tenThanhPho;
+    private String tenHuyen;
+    private String tenXa;
+    private String diaChi;
+
+    public NhanVienResponseImplDTO(NguoiDung nguoiDung, DiaChi diaChi){
+        this.iduser=nguoiDung.getId();
+        this.email=nguoiDung.getEmail();
+        this.ma=nguoiDung.getMa();
+        this.ngayThamGia=nguoiDung.getNgayThamGia();
+        this.ngaySua=nguoiDung.getNgaySua();
+        this.avatar=nguoiDung.getAnh();
+        this.soDienThoai=nguoiDung.getSoDienThoai();
+        this.trangThai=nguoiDung.getTrangThai();
+        this.ngaySinh=nguoiDung.getNgaySinh();
+        this.ten=nguoiDung.getTen();
+        this.gioiTinh=nguoiDung.getGioiTinh();
+        this.chungMinhThu=nguoiDung.getChungMinhThu();
+        this.idAddress=diaChi.getId();
+        this.tenThanhPho=diaChi.getTenThanhPho();
+        this.tenHuyen=diaChi.getTenHuyen();
+        this.tenXa=diaChi.getTenXa();
+        this.diaChi=diaChi.getDiaChi();
+    }
+    public NhanVienResponseImplDTO(NguoiDung nguoiDung){
+        this.iduser=nguoiDung.getId();
+        this.email=nguoiDung.getEmail();
+        this.ma=nguoiDung.getMa();
+        this.ngayThamGia=nguoiDung.getNgayThamGia();
+        this.ngaySua=nguoiDung.getNgaySua();
+        this.avatar=nguoiDung.getAnh();
+        this.soDienThoai=nguoiDung.getSoDienThoai();
+        this.trangThai=nguoiDung.getTrangThai();
+        this.ngaySinh=nguoiDung.getNgaySinh();
+        this.ten=nguoiDung.getTen();
+        this.gioiTinh=nguoiDung.getGioiTinh();
+        this.chungMinhThu=nguoiDung.getChungMinhThu();
+    }
+
+}

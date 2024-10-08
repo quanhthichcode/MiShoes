@@ -1,0 +1,164 @@
+body{
+    font: normal 300 1.4rem/1.86 Poppins,sans-serif;
+}
+.intro-content{
+    position: absolute;
+    z-index: 2;
+    top:27%;
+    margin-left:50px;
+}
+.intro-subtitle{
+    font-size: 2 rem;
+    font-weight: 300;
+    letter-spacing: -.01rem;
+}
+.intro-title{
+    font-size: 3rem;
+    margin-left: -2px;
+    margin-bottom: 0.2rem;
+    font-weight: 700;
+    letter-spacing: -.03em;
+    line-height: 1.1;
+    
+}
+.intro-price{
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    letter-spacing: -.03em;
+    margin-bottom: 1.3rem;
+}
+.intro-content .btn{
+    color: #445f84;
+    background-color: #fff;
+    border-color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 3rem;
+}
+.intro-content .btn:hover{
+background-color: #445f84;
+color: #fff;
+border-color: #445f84;
+}
+
+.slick-dots.slick-dots-bottom{
+    margin-top: 200px;
+}
+ 
+.banner-group .banner-content {
+    position: absolute;
+    top:90%;
+    color: #fff;
+    margin-left: 185px;
+}
+.banner-group .banner-content-left {
+    position: absolute;
+    top: 90%;
+    color: #fff;
+    margin-left: 20px;
+}
+.banner-group .banner-content-middle {
+    position: absolute;
+    top: 125%;
+    color: #fff;
+    margin-left: 50px;
+}
+.banner-subtitle{
+    font-weight: 300;
+    letter-spacing: -.01em;
+    margin-bottom: 0.4rem;
+    color: #ebebeb;
+  
+}
+.banner-title{
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.25;
+    margin-bottom: 0.1rem;
+    letter-spacing: -.01em;
+}
+.banner-link{
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.8rem 1.4rem;
+    min-width: 0;
+    text-transform: uppercase;
+    text-decoration: none!important;
+}
+.btn-outline-white{
+    color: #fff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 35px;
+}
+.btn-outline-white:hover{
+    color: #333;
+    background-color: #fff;
+}
+.btn-outline-dark{
+    color:black;
+    background-color: transparent;
+    background-image: none;
+    border-color: black;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 35px;
+}
+.banner-text {
+    color: #333;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.25;
+    letter-spacing: -.025em;
+    margin-bottom: 0.5rem;
+}
+.icon-box-side {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+.icon-box {
+    color: #777;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.25;
+    letter-spacing: -.01em;
+    margin-bottom: 0;
+}
+.icon-box-side .icon-box-title {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: -.01em;
+    margin-top: 0.2rem;
+    margin-bottom: 0;
+}
+.icon-box-side .icon-box-icon {
+    display: inline-block;
+    line-height: 0;
+    min-width: 5rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+.border-box{
+    border-right: #bdbdbd 1.5px solid;
+}
+.custom-scrollbar-thong-bao::-webkit-scrollbar {
+    width: 8px;
+    /* Điều chỉnh độ rộng của thanh cuộn */
+}
+.custom-scrollbar-thong-bao::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    /* Màu nền của track */
+}
+
+.custom-scrollbar-thong-bao::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    /* Màu của thumb */
+}

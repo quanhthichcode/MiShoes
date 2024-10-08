@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+// Button
+$button-background-color: #49a2ff;
+$button-width: 10em;
+$button-height: 3em;
+$button-border-radius: 1.5em;
+$button-transition-time: 512ms;
+$button-transition-time-half: $button-transition-time / 2;
+
+// Button active state
+$road-background-color: #1f1f1f;
+$road-width: 1.5em;
+$road-height: 4em;
+
+// Truck
+$truck-width: 5.5em;
+$truck-drop-animation-time: 1024ms;
+$truck-move-animation-time: 1024ms;
+$truck-move-delay-time: $truck-drop-animation-time + $button-transition-time + 256ms;
+
+// Thank you text
+$thank-you-animation-time: 512ms;
+$thank-you-delay-time: $truck-move-animation-time + $truck-move-delay-time + 128ms;
+
+// Other day text
+$other-day-animation-time: 512ms;
+$other-day-delay-time: $truck-move-animation-time + $truck-move-delay-time + 256ms;
+
+// Click run text
+$click-run-animation-time: 512ms;
+$click-run-delay-time: $other-day-animation-time + $other-day-delay-time + 128ms;
+
+// body {
+//     font-family: "Lilita One", cursive;
+//     background-color: #303030;
+//     width: 100vw;
+//     height: 100vh;
+//     padding: 2rem;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-wrap: nowrap;
+//     box-sizing: border-box;
+// }
+
+// Button styles
+.checkout-button {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+    text-shadow: 0.15em 0.15em rgba(#000000, 0.3);
+    background-color: $button-background-color;
+    width: $button-width;
+    height: $button-height;
+    border: 0;
+    outline: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0.2em 0.2em rgba(#000000, 0.3);
+    border-radius: $button-border-radius;
+    transition:
+        background-color 64ms ease-out,
+        box-shadow 64ms ease-out,
+        transform 64ms ease-out;
+
+    &:not(:target):active {
+        background-color: #2962ff;
+        box-shadow: 0em 0em rgba(#000000, 0.3);
+        transform: translate(0.2em, 0.2em);
+    }
+
+    &:target {
+        color: transparent;
+        text-shadow: 0.15em 0.15em transparent;
+        background-color: $road-background-color;
+        height: $road-height;
+        border-radius: 0;
+        box-shadow: 0em 0em rgba(#000000, 0.3);
+        transition:
+            color $button-transition-time ease-out,
+            height $button-transition-time ease-out,
+            background-color $button-transition-time ease-out,
+            border-radius $button-transition-time-half ease-out,
+            box-shadow $button-transition-time-half ease-out;
+
+        &:before,
+        &:after {
+            border-bottom: solid $road-height $road-background-color;
+        }
+
+        &:before {
+            border-left: solid $road-width transparent;
+            right: $button-width;
+        }
+
+        &:after {
+            border-right: solid $road-width transparent;
+            left: $button-width;
+        }
+
+        &.button-road-ending {
+            background-color: $button-background-color;
+            border: 0;
+            border-radius: $button-border-radius;
+        }
+    }
+
+    &:before,
+    &:after {
+        content: "";
+        border-bottom: solid $button-height $road-background-color;
+        position: absolute;
+        top: 0;
+        transition:
+            border $button-transition-time-half ease-out $button-transition-time-half,
+            border-bottom $button-transition-time ease-out;
+    }
+}
+
+// Truck styles
+figure.truck {
+    width: $truck-width;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    bottom: 35%;
+    left: calc(50% - #{$truck-width / 2});
+    z-index: 1;
+
+    img {
+        width: 100%;
+        vertical-align: middle;
+    }
+}
+
+.checkout-button:target figure.truck {
+    display: block;
+    opacity: 0;
+    transform-origin: bottom center;
+    animation:
+        truck-drop $truck-drop-animation-time linear $button-transition-time forwards,
+        truck-move $truck-move-animation-time linear $truck-move-delay-time forwards;
+
+    @keyframes truck-drop {
+        0% {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+
+        35% {
+            opacity: 1;
+            transform: scaleY(0.75) translateY(0);
+        }
+
+        55% {
+            opacity: 1;
+            transform: rotate(-5deg) scaleY(1.1) translateY(-20%);
+        }
+
+        70% {
+            opacity: 1;
+            transform: scaleY(0.9) translateY(0);
+        }
+
+        90% {
+            opacity: 1;
+            transform: rotate(2.5deg) scaleY(1.05) translateY(-10%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes truck-move {
+        0% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        25% {
+            opacity: 1;
+            transform: translateX(-15%) skewX(15deg);
+        }
+
+        40% {
+            opacity: 1;
+            transform: translateX(-20%) skewX(20deg);
+        }
+
+        50% {
+            opacity: 1;
+            transform: translateX(-20%) skewX(20deg);
+        }
+
+        70% {
+            opacity: 0.5;
+            transform: translateX(20%) skewX(-25deg);
+            filter: blur(0);
+        }
+
+        85% {
+            opacity: 0.2;
+            transform: translateX(50%) skewX(-35deg);
+            filter: blur(0.5em);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateX(60%) skewX(-45deg);
+            filter: blur(0.7em);
+        }
+    }
+}
+
+// Text styles
+.thank-you,
+.other-day,
+.click-run {
+    --translate-x: -50%;
+    color: #ffffff;
+    text-shadow: 0.15em 0.15em rgba(#000000, 0.3);
+    display: none;
+    white-space: nowrap;
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.checkout-button:target {
+
+    .thank-you,
+    .other-day,
+    .click-run {
+        display: block;
+        opacity: 0;
+    }
+}
+
+.thank-you {
+    font-size: 36px;
+    top: 0;
+}
+
+.checkout-button:target .thank-you {
+    animation:
+        thank-you-entry $thank-you-animation-time ease-out $thank-you-delay-time forwards;
+
+    @keyframes thank-you-entry {
+        0% {
+            opacity: 0;
+            transform: skewX(45deg) translateX(-100%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.other-day {
+    font-size: 24px;
+    bottom: 10%;
+}
+
+.checkout-button:target .other-day {
+    animation:
+        other-day-entry $other-day-animation-time ease-out $other-day-delay-time forwards;
+
+    @keyframes other-day-entry {
+        0% {
+            opacity: 0;
+            transform: translateX(-50%) translateY(100%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+    }
+}
+
+.click-run {
+    font-size: 24px;
+    bottom: -50%;
+    transform-origin: center center !important;
+}
+
+.checkout-button:target .click-run {
+    animation:
+        click-run-entry $click-run-animation-time ease-out $click-run-delay-time forwards;
+
+    @keyframes click-run-entry {
+        0% {
+            opacity: 0;
+            transform: translateX(-50%) rotate(0deg);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(-50%) rotate(720deg);
+        }
+    }
+}
